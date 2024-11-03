@@ -43,19 +43,18 @@
                     <p> This page contains Data Science projects I've completed</p>
                     
                     <ul>
-                        <li> <b>Employee Churn Prediction </b> (notebook is <a href = "prediction_leave.html">here</a>). 
-                            I trained several classification algorithms to predict the probability of an employee leaving. 
-                            The random forest performed best with a AUC score of 0.978. 
-                            The most important variables that explain employee leaves are the number of hours worked and 
-                            the lack of satisfaction at work.  <br />
+                        <li> <b> Text as outcome within a causal inference framework (Stanford CS224N) </b> (project report is <a href = "CS224N_Project.pdf">here</a>). 
+                            I investigated the evolution of topics in political speeches by Republicans and Democrats before and after 9/11, using a causal inference framework. 
+                            I analyzed how different topic modeling approaches—LDA and BERTopic—affected the estimation of treatment effects. 
+                            Interestingly, both models indicated that Democrats increased their focus on war-related topics more than Republicans post-9/11. 
+                            However, BERTopic revealed an additional nuance: Republicans significantly increased their focus on terrorism, potentially shifting attention away from war topics. 
+                            This study underscored the pivotal role of textual representation in shaping the interpretation of causal estimates. <br />
                             <img src="assets/img/feature_importance.png" alt="result_class" width="400" height="300" class = "center"/>
                              </li>
-                         <li> <b>Clustering customers</b> (notebook is <a href = "clustering.html">here</a>). 
-                            The goal is to cluster customers according to their purchasing patterns. 
-                            I use two datasets to do so. The first one contains aggregate variables concerning a consumer purchases. 
-                            The other contains, for each customer, how many time a product has been bought. 
-                            Since the latter dataset is very big due to the numer of products, I am performing a PCA. 
-                            The two K-mean clustering algorithms have an adjusted RAND score of 0.75.  <br />
+                         <li> <b>Predicting electoral outcomes (Stanford CS229) </b> (notebook is <a href = "CS229_Project.pdf">here</a>). 
+                            I analyzed voter preferences and explored why different socio-demographic groups (income, religion, race, education, etc.) vote for specific candidates, as these features are often considered key predictors. 
+                            To predict the outcome of the 1981 French presidential election, I used three regression algorithms—Ridge, AdaBoost, and a multi-layer perceptron. 
+                            However, each model produced a mean squared error (MSE) of around 0.09, suggesting that the chosen variables may lack sufficient explanatory power for accurate prediction in this context. <br />
                             <img src="assets/img/clustering.png" alt="result_cluster" width="400" height="300" class = "center"/>
                              </li>
                         
